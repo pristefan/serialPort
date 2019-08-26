@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "serialPortWinForm", "serialPortWinForm\serialPortWinForm.csproj", "{3520B6E5-D4CD-400E-8ACD-2CC3521486D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3520B6E5-D4CD-400E-8ACD-2CC3521486D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3520B6E5-D4CD-400E-8ACD-2CC3521486D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3520B6E5-D4CD-400E-8ACD-2CC3521486D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3520B6E5-D4CD-400E-8ACD-2CC3521486D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DEB31A5-77B0-41C5-ACB1-AE73BC848724}
+	EndGlobalSection
+EndGlobal

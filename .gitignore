@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs/serialPortWinForm/v16
+/serialPortWinForm/bin
+/serialPortWinForm/obj
