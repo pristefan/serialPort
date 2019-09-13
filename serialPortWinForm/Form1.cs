@@ -34,7 +34,9 @@ namespace serialPortWinForm
             cmbBaudRate.SelectedIndex = 7;
             cmbDataBits.SelectedIndex = 1;
             cmbParity.SelectedIndex = 0;
-            cmbPortName.SelectedIndex = 0;
+
+            //    cmbPortName.SelectedIndex = 0;
+            
             cmbStopBits.SelectedIndex = 0;
         }
 
@@ -49,6 +51,7 @@ namespace serialPortWinForm
         //private SerialPort serialPort1 = new SerialPort();
         private void BtnConnect_Click(object sender, EventArgs e)
         {
+            updatePorts();
             if (serialPort1.IsOpen)
             {
                 disconnect();
@@ -58,7 +61,7 @@ namespace serialPortWinForm
                 connect();
             }
         }
-
+        
         private void disconnect()
         {
 
@@ -134,7 +137,11 @@ namespace serialPortWinForm
 
         private void sendData()
         {
-
+            if (serialPort1.IsOpen == false)
+            {
+                disconnect();
+                return;
+            }
             bool error = false;
             if (rdText.Checked == true) //if text mode is selected, send data as                tex
             {
@@ -200,7 +207,7 @@ namespace serialPortWinForm
 
         private void SerialPort1_ErrorReceived(object sender, SerialErrorReceivedEventArgs e)
         {
-
+            disconnect();
         }
 
         private void RtxtDataArea_TextChanged(object sender, EventArgs e)
